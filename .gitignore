@@ -1,6 +1,5 @@
 .env
 **/.env
-**/data
 **/images
 **/tmp
 **/__pycache__/
