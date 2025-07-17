@@ -1,0 +1,9 @@
+.env
+**/.env
+**/data
+**/images
+**/tmp
+**/__pycache__/
+**/*.log
+**/.DS_Store
+

@@ -1,0 +1,16 @@
+services:
+  umami:
+    image: ghcr.io/umami-software/umami:postgresql-latest
+    container_name: umami
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgres://umami:${UMAMI_PASSWORD}@postgres:5432/umami
+      APP_SECRET: ${APP_SECRET}
+    restart: unless-stopped
+    networks:
+      - infra-net
+
+networks:
+  infra-net:
+    external: true
