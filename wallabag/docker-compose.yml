@@ -1,6 +1,6 @@
 services:
   wallabag:
-    image: wallabag/wallabag
+    image: wallabag/wallabag:latest
     restart: unless-stopped
     environment:
       - SYMFONY__ENV__DATABASE_DRIVER=pdo_pgsql
