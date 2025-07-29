@@ -15,6 +15,8 @@ services:
       - SYMFONY__ENV__FROM_EMAIL=wallabag@example.com
       - SYMFONY__ENV__DOMAIN_NAME=https://wallabag.codemining.dev
       - SYMFONY__ENV__SERVER_NAME="Wallabag @ codemining.dev"
+      - SYMFONY_ENV=prod
+      - APP_ENV=prod
     ports:
       - "8080:80"
     volumes:
