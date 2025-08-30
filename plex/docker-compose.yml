@@ -9,6 +9,7 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
       - VERSION=docker
+      - PLEX_CLAIM=claim-6wfZvdoPaqmHRoKscGXq
     volumes:
       - /home/przemodevops/plex/config:/config
       - /mnt/toshiba/Movies:/movies
