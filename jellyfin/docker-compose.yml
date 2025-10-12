@@ -12,4 +12,5 @@ services:
       - /srv/containers/jellyfin/config:/config
       - /srv/containers/jellyfin/cache:/cache
       - /mnt/toshiba:/media
+      - /mnt/sata1:/media1
     restart: unless-stopped
