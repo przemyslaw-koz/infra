@@ -7,7 +7,7 @@ services:
       - "8096:8096"
     environment:
       - TZ=Europe/Warsaw
-      - JELLYFIN_PublishedServerUrl=92.168.1.19
+      - JELLYFIN_PublishedServerUrl=192.168.1.19
     volumes:
       - /srv/containers/jellyfin/config:/config
       - /srv/containers/jellyfin/cache:/cache
